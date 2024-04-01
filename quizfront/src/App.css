@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.klasa {
+  position: relative;
+  left: 100px;
+  width: 900px;
+  padding: 20px;
+}
+
+input[type="radio"] {
+  margin-top: -1px;
+  cursor: pointer;
+  display: block;
+  margin-bottom:-20px;
+  margin-left: -5px
+}
+.selected-answer-correct {
+  background-color: #90EE90;
+ 
+  padding: 4px;
+}
+
+.selected-answer-incorrect {
+  background-color: #e74c3c; 
+  padding: 4px;
+  
+}
+.custom-radio input:checked ~ span {
+  background-color: #000;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.klasa label {
+  position: relative;
+  margin-bottom: -10px; 
+}
+.App-link {
+  color: #61dafb;
+}
+.quiz-container {
+  background: #ffffff;
+  border-radius: 4px;
+  
+}
+.selected-answer {
+  background-color: #483D8B; /* Green background for selected answer */
+  color: #fff; /* White text for selected answer */
+  padding: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.unselected-answer {
+  background-color: #f1f1f1; /* Light gray background for unselected answer */
+  padding: 8px;
+  cursor: pointer;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
